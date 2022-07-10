@@ -16,36 +16,41 @@
     <header class="header">
         <div class="container">
             <div class="header__top">
-                <a class="header__logo" href="#">
-                    <img class="header__img" src="/assets/images/logo.svg" alt="">
-                </a>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Home</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">About Us</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Shop</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Pages</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                </nav>
-                <button class="basket-btn">
-                    <li class="basket__item">
-                        <a class="basket__link" href="#">
-                            <img class="basket__img" src="/assets/images/basket.svg" alt="">
-                        </a>
-                    </li>
-                    <div class="basket__text">Cart 0</div>
+                <div class="links">
+                    <a class="header__logo" href="#">
+                        <img class="header__img" src="/assets/images/logo.svg" alt="">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Home</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">About Us</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Shop</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Pages</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <button class="menu__btn">
+                    <span></span>
                 </button>
+                <a class="basket-btn" href="#">
+                    <div class="basket-btn__circle">
+                        <img class="basket-btn__img" src="/assets/images/basket.svg" alt="">
+                    </div>
+                    <p class="basket-btn__text">
+                        Cart 0
+                    </p>
+                </a>
             </div>
         </div>
         <div class="header__content">
@@ -53,12 +58,12 @@
                 <div class="header__content-inner">
                     <div class="header__text text">
                         <h2 class="title">Made with nature</h2>
-                        <p class="title__descr">Welcome to the</p>
-                        <p class="title__descr">world of nature</p>
-                        <p class="title__descr">and organic.</p>  
+                        <p class="title__descr">Welcome to the <br> world of nature <br> and organic.</p>
                     </div>
-                    <button class="point__btn">Explore now<img class="btn__pointer" src="/assets/images/pointer.svg" alt="">
-                    </button>
+                    <a class="header__btn" href="#">
+                        <p class="header__btn-texxt">Explore now</p>
+                        <img class="header__btn-img" src="/assets/images/pointer.svg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -98,8 +103,7 @@
                 <div class="about__text">
                     <h2 class="title">About</h2>
                     <div class="title__descr">
-                        <p class="title__descr-item">We Believe in Organic</p>
-                        <p class="title__descr-item">Foods For Strong Health</p>
+                        <p class="title__descr-item">We Believe in Organic<br>Foods For Strong Health</p>
                     </div>
                     <div class="item__title-text">
                         <p class="text">
@@ -120,8 +124,12 @@
                             Once your product is packed it will be delivered to your nearby locality you can directly visit the to buy the product.
                         </p>
                     </div>
-                    <button class="point__btn about__btn">Shop Now<img class="btn__pointer" src="/assets/images/pointer.svg" alt="">
-                    </button>
+                    <a class="about__btn" href="#">
+                        <p class="about__btn-text">
+                            Shop Now
+                        </p>
+                        <img class="about__btn-img" src="/assets/images/pointer.svg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -304,8 +312,12 @@
                     <h2 class="title">Offer Products</h2>  
                     <p class="title__descr-item title__descr-item_white">We Offer Organic For You</p>
                 </div>
-                <button class="point__btn point__btn_offer">View All Prodicts<img class="btn__pointer" src="/assets/images/pointer.svg" alt="">
-                </button>
+                <a class="offer__btn" href="#">
+                    <p class="offer__btn-text">
+                        View All Prodicts
+                    </p>
+                    <img class="offer__btn-img" src="/assets/images/pointer.svg" alt="">
+                </a>
             </div>
             <div class="products__offer">
                 <div class="products__card">
@@ -396,7 +408,7 @@
             </div>
         </div>
     </section>
-    <div class="food">
+    <!-- <div class="food">
         <div class="food-container">
             <div class="food__item">
                 <img class="food__item-img" src="/assets/images/food-juice.jpg" alt="">
@@ -412,5 +424,187 @@
             </div>  
         </div>
     </div>
+    <section class="news">
+        <div class="container">
+            <div class="news__header">
+                <div class="news__title">
+                    <h2 class="news__title-main">
+                        News
+                    </h2>
+                    <p class="news__title-descr">
+                        Discover The recent content about organic products
+                    </p>
+                </div>
+                <a class="news__btn" href="#">
+                    <p class="news__btn-text">
+                        More News
+                    </p>
+                    <img class="news__btn-img" src="/assets/images/pointer.svg" alt="">
+                </a>
+            </div>
+            <div class="news__items">
+                <div class="news__item">
+                    <img class="news__item-img" src="/assets/images/news-item-bg-1.jpg" alt="">
+                    <div class="news__item-card">
+                        <div class="news__item-card-person">
+                            <img class="news__item-card-person-icon" src="/assets/images/news-icon.svg" alt="">
+                            <p class="news__item-card-person-name">
+                                Kristina Castle
+                            </p>
+                        </div>
+                        <p class="news__item-card-title">
+                            Everything You Need to Know About Organic
+                        </p>
+                        <p class="news__item-card-text">
+                            Organic farming is the only way that you still can experience the real world.
+                        </p>
+                        <a href="#" class="news__item-card-link">
+                            View More
+                            <img class="news__item-card-link-img" src="/assets/images/pointer.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="news__item">
+                    <img class="news__item-img" src="/assets/images/news-item-bg-2.jpg" alt="">
+                    <div class="news__item-card">
+                        <div class="news__item-card-person">
+                            <img class="news__item-card-person-icon" src="/assets/images/news-icon.svg" alt="">
+                            <p class="news__item-card-person-name">
+                                Alex Louis
+                            </p>
+                        </div>
+                        <p class="news__item-card-title">
+                            Organic Fruits: Surprising Benefits and Facts
+                        </p>
+                        <p class="news__item-card-text">
+                            The world of nature has grown on the principles of health, ecology, and care.
+                        </p>
+                        <a href="#" class="news__item-card-link">
+                            View More
+                            <img class="news__item-card-link-img" src="/assets/images/pointer.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="form">
+        <div class="container">
+            <div class="form__inner">
+                <p class="form__inner-text">
+                    Subscribe our <br> Newsletter
+                </p>
+                <form class="form__inner-subscribe" action="/">
+                    <input class="form__inner-subscribe-input" type="email" placeholder="Enter your email address">
+                    <a class="form__inner-subscribe-btn" href="#">
+                        Subscribe
+                        <img class="form__inner-subscribe-btn-img" src="/assets/images/pointer.svg" alt="">
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__items">
+                <div class="footer__items-contacts">
+                    <p class="footer__items-header">
+                        Contact Us
+                    </p>
+                    <ul class="footer__items-contacts-list">
+                        <li class="footer__items-contacts-list-item">
+                            <p class="footer__items-contacts-list-item-name">
+                                Email
+                            </p>
+                            <a class="footer__items-contacts-list-item-info" href="mailto:needhelp@organick.com">
+                                needhelp@organick.com
+                            </a>
+                        </li>
+                        <li class="footer__items-contacts-list-item">
+                            <p class="footer__items-contacts-list-item-name">
+                                Phone
+                            </p>
+                            <a class="footer__items-contacts-list-item-info" href="tel:123 (1254) 1452">
+                                123 (1254) 1452
+                            </a>
+                        </li>
+                        <li class="footer__items-contacts-list-item">
+                            <p class="footer__items-contacts-list-item-name">
+                                Address
+                            </p>
+                            <a class="footer__items-contacts-list-item-info" href="http://www.google.com/maps/search/88+Road,+Brooklyn+Street,+USA/@40.6795526,-74.134389,10.9z" target="_blank">
+                                88 Road, Brooklyn Street, USA
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__items-social">
+                    <a class="footer__items-social-logo" href="#">
+                        <img class="footer__items-social-logo-img" src="assets/images/logo.svg" alt="">
+                    </a>
+                    <p class="footer__items-social-text">
+                        We are a popular and farming company aspiring to be a leader <br> in the Organic food industry.
+                    </p>
+                    <ul class="footer__items-social-list">
+                        <li class="footer__items-social-list-item">
+                            <a class="footer__items-social-list-item-link" href="#">
+                                <img class="footer__items-social-list-item-link-icon" src="/assets/images/fb-icon.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__items-social-list-item">
+                            <a class="footer__items-social-list-item-link" href="#">
+                                <img class="footer__items-social-list-item-link-icon" src="/assets/images/twitter-icon.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__items-social-list-item">
+                            <a class="footer__items-social-list-item-link" href="#">
+                                <img class="footer__items-social-list-item-link-icon" src="/assets/images/inst-icon.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__items-social-list-item">
+                            <a class="footer__items-social-list-item-link" href="#">
+                                <img class="footer__items-social-list-item-link-icon" src="/assets/images/pint-icon.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__utility">
+                    <p class="footer__items-header">
+                        Utility Pages
+                    </p>
+                    <ul class="footer__utility-list">
+                        <li class="footer__utility-list-item">
+                            <a class="footer__utility-links-item-link" href="#">
+                                Style Guide
+                            </a>
+                        </li>
+                        <li class="footer__utility-list-item">
+                            <a class="footer__utility-links-item-link" href="#">
+                                Protected
+                            </a>
+                        </li>
+                        <li class="footer__utility-list-item">
+                            <a class="footer__utility-links-item-link" href="#">
+                                Page Not Found
+                            </a>
+                        </li>
+                        <li class="footer__utility-list-item">
+                            <a class="footer__utility-links-item-link" href="#">
+                                Changelog
+                            </a>
+                        </li>
+                        <li class="footer__utility-list-item">
+                            <a class="footer__utility-links-item-link" href="#">
+                                Licenses
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
