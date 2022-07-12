@@ -1071,6 +1071,7 @@ ul {
         display: none;
     }
     .footer__items-social {
+        margin-right: 0;
         border: none;
     }
     .footer__items-social-logo {
