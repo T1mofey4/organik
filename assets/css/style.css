@@ -1067,6 +1067,21 @@ ul {
     .eco__title-descr {
         font-size: 40px;
     }
+    .footer__items-contacts {
+        display: none;
+    }
+    .footer__items-social {
+        border: none;
+    }
+    .footer__items-social-logo {
+        display: none;
+    }
+    .footer__items-social-text {
+        display: none;
+    }
+    .footer__utility {
+        display: none;
+    }
 }
 
 @media (max-width: 740px) {
