@@ -433,7 +433,7 @@ ul {
     background-position: center;
     background-size: cover;
     text-align: center;
-    padding-bottom: 150px;
+    margin-bottom: 150px;
 }
 
 .reviews__inner {
@@ -618,6 +618,7 @@ ul {
 .food{
     background-color: #EFF6F1;
     padding: 140px 0;
+    margin-bottom: 130px;
 }
 
 .food-container {
@@ -665,8 +666,7 @@ ul {
 /*news*/
 
 .news {
-    padding-top: 130px;
-    padding-bottom: 229px;
+    margin-bottom: 229px;
     
 }
 
@@ -729,6 +729,7 @@ ul {
 .news__item {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .news__item-card {
@@ -740,8 +741,7 @@ ul {
     padding-left: 42px;
     padding-bottom: 60px;
     padding-right: 50px;
-    margin-top: 330px;
-    margin-left: 30px;
+    margin-top: 250px;
     box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.2);
 }
 
@@ -853,9 +853,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     border-radius: 16px;
-    padding-top: 26px;
-    padding-bottom: 27px;
-    padding-left: 36px;
+    padding: 26px 11px 27px 36px;
     transition: all .3s;
 }
 
@@ -863,7 +861,6 @@ ul {
     background-color: #335B6B;
     border-radius: 100%;
     padding: 10px;
-    margin-right: 11px;
 }
 
 .form__inner-subscribe-btn:hover {
@@ -949,6 +946,26 @@ ul {
     margin-bottom: 24px;
 }
 
+@media (max-width: 1400px) {
+    .news__items {
+        flex-direction: column;
+        align-items: center;
+        gap: 150px;
+    }
+    .news__btn {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .form__inner {
+        padding: 119px 40px;
+    }
+    .form__inner-text {
+        font-size: 40px;
+    }
+} 
+
 @media (max-width: 1075px) {
     .menu__list {
         position: absolute;
@@ -1012,6 +1029,16 @@ ul {
     .food__item-name {
         width: 200px;
     }
+    .news__header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 980px) {
+    .form__inner {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -1046,6 +1073,13 @@ ul {
     }
     .food__item-name {
         width: 312px;
+    }
+    .news__header {
+        margin-bottom: 52px;
+    }
+    .news__item-card {
+        margin-top: 200px;
+        max-width: 580px;
     }
 }
 
@@ -1089,6 +1123,21 @@ ul {
         margin-left: 0;
         padding-left: 15px;
     }
+    .news__title-descr {
+        font-size: 38px;
+    }
+    .news__items {
+        gap: 140px;
+    }
+    .news__item-card {
+        margin-top: 140px;
+        max-width: 470px;
+        padding: 43px 40px 50px 32px;
+    }
+    .form__inner-subscribe-input {
+        width: 250px;
+        padding-left: 21px;
+    }
 }
 
 @media (max-width: 530px) {
@@ -1115,22 +1164,22 @@ ul {
         margin-bottom: 68px;
     }
     .products__offer {
-        grid-template-columns: repeat(auto-fill, 360px);
+        grid-template-columns: repeat(auto-fill, 350px);
     }
     .products__card {
-        max-width: 360px;
+        max-width: 350px;
     }
     .products__card-img {
         margin-left: 0;
     }
-    .products__last-price {
-        font-size: 15px;
+    .products__past-price {
+        font-size: 14px;
     }
     .products__present-price {
-        font-size: 16px;
+        font-size: 15px;
     }
     .reviews {
-        padding-bottom: 100px;
+        margin-bottom: 68px;
     }
     .reviews__inner {
         padding-top: 68px;
@@ -1149,11 +1198,28 @@ ul {
     }
     .food {
         padding: 68px 0;
+        margin-bottom: 68px;
     }
     .food__item {
         width: 340px;
         height: 500px;
         padding-top: 206px;
+    }
+    .news {
+        margin-bottom: 195px;
+    }
+    .news__item-card {
+        max-width: 340px;
+        margin-top: 33px;
+        padding: 25px 40px 25px 32px;
+    }
+    .form {
+        margin-bottom: 68px;
+    }
+    .form__inner-subscribe-btn {
+        width: 132px;
+        padding-left: 7px;
+        font-size: 15px;
     }
 }
 
@@ -1173,4 +1239,27 @@ ul {
     .cards__text-content {
         font-size: 28px;
     }
+    .news__item-card-title {
+        margin-bottom: 20px;
+    }
+    .news__item-card {
+        margin-top: 20px;
+        max-width: 300px;
+    }
+    .form__inner-text {
+        font-size: 35px;
+    }
+    .form__inner-subscribe-input {
+        width: 171px;
+        height: 60px;
+        font-size: 14px;
+        padding-left: 4px;
+    }
+    .form__inner-subscribe-btn {
+        width: 132px;
+        height: 60px;
+        font-size: 14px;
+        padding-right: 8px;
+    }
+
 }
